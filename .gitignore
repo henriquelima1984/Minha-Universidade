@@ -1,4 +1,94 @@
 # Compiled class file
+// classe pessoa
+public class Pessoa {
+    // Atributos
+    private String cpf;
+    private String nome;
+    private int idade;
+    
+    // Construtor
+    public Pessoa(String cpf, String nome, int idade, ) {
+        this.cpf = cpf;
+        this.nome = nome;
+        this.idade = idade;
+        
+    }
+
+    
+    // Métodos getters e setters
+    public String getCpf() {
+        return cpf;
+    }
+    
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+    
+    public String getNome() {
+        return nome;
+    }
+    
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
+    public int getIdade() {
+        return idade;
+    }
+    
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    
+    // Método  para ser implementado nas subclasses
+    public abstract void fazerAniversário(){
+        int.idade= this.idade++;
+        this.setIdade(idade);
+        system.out.print("Fiquei mais velho, agora tenho"+this.getidade())
+    };
+}
+
+// classe disciplina
+public class Disciplina {
+    // Atributos
+    private String codigo;
+    private String nome;
+    private int semestre;
+    
+    // Construtor
+    public Disciplina(String codigo, String nome, int semestre) {
+        this.codigo = codigo;
+        this.nome = nome;
+        this.semestre = semestre;
+    }
+    
+    // Métodos getters e setters
+    public String getCodigo() {
+        return codigo;
+    }
+    
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+    
+    public String getNome() {
+        return nome;
+    }
+    
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
+    public int getSemestre() {
+        return semestre;
+    }
+    
+    public void setSemestre(int semestre) {
+        this.semestre = semestre;
+    }
+}
+
 *.class
 
 # Log file
